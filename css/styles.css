@@ -1,7 +1,67 @@
+#hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 4;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+}
+
+@keyframes menu-slide-in {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+#hamburger:hover {
+  overflow: visible;
+}
+
+#hamburger:hover #menu-back {
+  animation: menu-slide-in 1s;
+  animation-fill-mode: both;
+}
+
+#hamburger-symbol {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.ham-line {
+  height: 4px;
+  width: 22px;
+  border-radius: 4px;
+  background-color: teal;
+  margin-bottom: 4px;
+}
+
+#menu-back {
+  background-color: white;
+  height: 150px;
+  width: 100px;
+  position: absolute;
+  top: 40px;
+  right: -100px;
+  z-index: 3;
+}
+
+#menu a{
+  text-align: right;
+  display: block;
+  margin: 10px;
+}
+
 #carousel {
   width: 1000px;
   height: 600px;
   overflow: hidden;
+  margin: 0px auto;
+  margin-top: 50px;
 }
 
 #carousel:hover #picture-holder {
