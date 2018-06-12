@@ -1,0 +1,53 @@
+#carousel {
+  width: 1000px;
+  height: 600px;
+  overflow: hidden;
+}
+
+@keyframes swipe-off {
+  0% {
+    transform: translateX(0px);
+  }
+  17% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(-1020px);
+  }
+  37% {
+    transform: translateX(-1020px);
+  }
+  40% {
+    transform: translateX(-2040px);
+  }
+  57% {
+    transform: translateX(-2040px);
+  }
+  60% {
+    transform: translateX(-3060px);
+  }
+  77% {
+    transform: translateX(-3060px);
+  }
+  80% {
+    transform: translateX(-4080px);
+  }
+  97% {
+    transform: translateX(-4080px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+#picture-holder {
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  animation: swipe-off 12s 1s infinite linear;
+}
+
+img {
+  align-self: center;
+  margin: 10px;
+}
