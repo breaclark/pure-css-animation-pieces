@@ -1,6 +1,6 @@
 # CSS Animation Elements
 
-#### An exercise in using css animations to create a carousel and hamburger menu
+#### An exercise in using css animations to create a carousel and hamburger menu. See it live at: https://breaclark.github.io/pure-css-animation-pieces/
 
 #### By **Brea Clark**
 
